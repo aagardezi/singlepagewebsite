@@ -1,0 +1,14 @@
+runtime: python39
+handlers:
+- url: /.*
+  static_files: index.html
+  upload: index.html
+
+
+- url: /error
+  static_files: error_default.html
+  upload: error_default.html
+
+error_handlers:
+- file: /error/error_default.html
+
